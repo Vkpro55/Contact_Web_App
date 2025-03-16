@@ -1,3 +1,5 @@
+
 module.exports = {
-    ContactRepository: require('./contact-repo')
+    ContactRepository: require('./contact-repo'),
+    MessageRepository: require('./message-repo')
 }

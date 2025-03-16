@@ -1,1 +1,3 @@
-module.exports = {};
+module.exports = {
+    MessageMiddleware: require('./message-middlewares')
+};

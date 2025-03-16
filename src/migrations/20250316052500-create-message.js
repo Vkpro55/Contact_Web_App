@@ -7,7 +7,12 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: "Contacts",
+          key: "id",
+        },
+        onDelete: "CASCADE",
       },
       receiverName: {
         type: Sequelize.STRING,
@@ -16,7 +21,6 @@ module.exports = {
       phoneNumber: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true
       },
       otp: {
         type: Sequelize.STRING,
