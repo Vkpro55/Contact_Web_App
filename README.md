@@ -50,6 +50,13 @@
 - If you are setting up the test or production environment, then specify the host(Url where your DB is hosted).
 
 - Start the development server:
+
   ```
     npm run start
+  ```
+
+- Create the db specified in the `config.json`
+
+  ```
+  npx sequelize db:create
   ```
