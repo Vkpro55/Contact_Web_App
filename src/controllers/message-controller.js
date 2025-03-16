@@ -33,14 +33,12 @@ async function getMessagesForContact(req, res) {
         }
 
         const response = await MessageService.getMessagesForContact(phoneNumber);
-        console.log("Response rec - controller");
 
         SuccessResponse.data = response;
         return res
             .status(StatusCodes.OK)
             .json(SuccessResponse);
     } catch (error) {
-        console.log("Error rec - controller", error);
 
         ErrorResponse.error = error;
         return res
